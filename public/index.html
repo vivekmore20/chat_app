@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+  <div class="main-container">
+    
+      <div class="left-container">
+        <h1>Chat Application</h1>
+        <!-- <button onchange="">Create Chat Room</button> -->
+        <div id="active-users" class="active-users">
+          <h4>Active Users</h4>
+
+        </div>
+        
+       
+      </div>
+
+    
+    <div class="right-container">
+    <div class="chat-container">
+      <h2 class="head">Chats</h2>
+      <ul id="messages" class="messages">
+        
+      </ul>
+    </div>
+    <div class="form-container">
+      <form id="form" action="" class="form">
+        <select name="connected-user" id="connected"></select>
+        <input id="input" autocomplete="off" /><button>Send</button>
+      </form>
+    </div>
+  </div>
+  </div>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</html>
